@@ -15,8 +15,30 @@ llmstatemachine is exploring how to make agents that use conversational tools an
 utilizing a state machine structure together with Generative AI.
 
 ## Installation
+I recoomend to use virtualenv for running examples. 
+On MacOS:
+
 ```bash
-pip install llmsstatemachine
+sudo apt install virtualenv
+```
+On Ubuntu:
+
+```bash
+brew install virtualenv
+```
+
+create virtualenv python environment, some of the required packages are only supported in versions < 3.12. This is why I specified python3.11 
+
+```bash
+virtualenv -p $(which python3.11) openai
+source openai/bin/activate
+```
+
+```bash
+pip3 install Cython NumPy openai
+pip3 install mazelib
+pip3 install python-dotenv
+pip3 install llmsstatemachine
 ```
 
 ## Usage
@@ -27,6 +49,9 @@ To use the Large Language Model State Machine, follow these steps:
 3. Define states and their respective transitions.
 4. Build the workflow agent and add a system message to it.
 5. Run model step by step until DONE.
+
+## Run Maze game example
+
 
 ## Example: Memory Game Agent
 
