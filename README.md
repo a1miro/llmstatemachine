@@ -16,12 +16,12 @@ utilizing a state machine structure together with Generative AI.
 
 ## Installation
 I recoomend to use virtualenv for running examples. 
-On MacOS:
+On Ubuntu:
 
 ```bash
 sudo apt install virtualenv
 ```
-On Ubuntu:
+On MacOS:
 
 ```bash
 brew install virtualenv
